@@ -8,7 +8,6 @@ dic={
     }
 
 }
-
 dt=pd.read_csv(r"C:\Users\KIIT0001\Desktop\Python\Scikit Learn\Social_Network_Ads.csv")
 for mp,model in dic.items():
     print(model["model Name"])
