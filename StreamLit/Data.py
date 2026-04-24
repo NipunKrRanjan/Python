@@ -13,3 +13,5 @@ for mp,model in dic.items():
     print(model["model Name"])
     print("Model2",mp)
 st.dataframe(dic)
+st.table(dt.head(20).drop(['Purchased'],axis='columns'))
+st.json(dic)
