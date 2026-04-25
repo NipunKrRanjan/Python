@@ -26,3 +26,6 @@ st.bar_chart(
     color="species",
     height=600
 )
+coords=pd.read_csv(r'C:\Users\KIIT0001\Desktop\Python\CSV\India Cities LatLng.csv')
+coords = coords.rename(columns={'lng': 'lon'})
+st.map(coords)
