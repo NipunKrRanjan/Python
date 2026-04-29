@@ -13,6 +13,7 @@ if(st.button("Submit")):
     else:
         diff=0
     prage=prage-diff
+    st.write(f"# Your present age is {prage} years")
     if(prage>18):
         st.success("Congratulation you can vote")
         st.balloons()
