@@ -13,6 +13,10 @@ app=FastAPI()
 def intro():
     return {"Welcome to Movie View System"}
 
+@app.get("/about")
+def about():
+    return {"Shows the JSON file named genre"}
+
 @app.get("/view")
 def view():
     data=load_data()
