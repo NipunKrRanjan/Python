@@ -1,4 +1,4 @@
-from fastapi import FastAPI,Path
+from fastapi import FastAPI,Path,HTTPException
 import json
 
 def load_data():
@@ -23,5 +23,5 @@ def view(movie_id:str=Path(...,description='Enter movie ID')):
 
     if(movie_id in data):
         return data[movie_id]
-    return {"Error":"Movie Not Found"}
+    raise HTTPException(status_code=404,detail='Movie not found')
 
