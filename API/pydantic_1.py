@@ -1,4 +1,4 @@
-from pydantic import BaseModel,EmailStr
+from pydantic import BaseModel,EmailStr,fieldvalidator
 from typing import Optional
 
 class Patient(BaseModel):
