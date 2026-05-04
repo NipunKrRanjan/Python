@@ -1,4 +1,4 @@
-from pydantic import BaseModel,EmailStr,fieldvalidator
+from pydantic import BaseModel,EmailStr,field_validator
 from typing import Optional
 
 class Patient(BaseModel):
@@ -6,6 +6,11 @@ class Patient(BaseModel):
     age:int
     email:EmailStr
     allergies:Optional[str]=None
+
+    @field_validator('name')
+    @classmethod
+    def name_change(cls,value):
+        return value.upper()
 
 Patient_info={
     'name':'Nipun',
