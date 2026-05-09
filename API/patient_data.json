@@ -1,1 +1,19 @@
-{"P001": {"name": "Nipun", "gender": "male", "age": 20, "address": {"plotno": "187", "city": "Ranchi", "state": "Jharkhand"}, "height": 1.65, "weight": 49.0, "allergies": ["NA"], "bmi": 17.99816345270891, "body": "underweight"}}
+{
+    "P001": {
+        "name": "Nipun",
+        "gender": "male",
+        "age": 20,
+        "address": {
+            "plotno": "187",
+            "city": "Ranchi",
+            "state": "Jharkhand"
+        },
+        "height": 1.65,
+        "weight": 49.0,
+        "allergies": [
+            "NA"
+        ],
+        "bmi": 17.99816345270891,
+        "body": "underweight"
+    }
+}
