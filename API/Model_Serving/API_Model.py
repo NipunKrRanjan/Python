@@ -15,6 +15,7 @@ class Input_Class(BaseModel):
     sepal_width:Annotated[float,Field(...,description="Enter the sepal width")]
     petal_length:Annotated[float,Field(...,description="Enter the petal length")]
     petal_width:Annotated[float,Field(...,description="Enter the petal width")]
+    #KEEP IN MIND: USE ':' WITH ANNOTATED AND NOT '='
 
 FEATURE_ORDER = ["sepal_length", "sepal_width", "petal_length", "petal_width"]
 
