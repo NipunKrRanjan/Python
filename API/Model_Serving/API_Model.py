@@ -7,7 +7,7 @@ import pandas as pd
 
 app=FastAPI()
 
-with open(r'Model.pkl','rb') as f:
+with open(r'Model\Model.pkl','rb') as f:
     model_used=pickle.load(f)
 
 class Input_Class(BaseModel):
