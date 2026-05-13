@@ -19,6 +19,10 @@ class Input_Class(BaseModel):
 
 FEATURE_ORDER = ["sepal_length", "sepal_width", "petal_length", "petal_width"]
 
+@app.post("/healthcheck")
+def health():
+    return {"meassage":"API is working fine"}
+
 #Converting class to DataFrame
 @app.post("/predict")
 def prediction(Input:Input_Class):
